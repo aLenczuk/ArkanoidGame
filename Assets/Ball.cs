@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour {
 
-
-    [SerializeField] Paddle paddle1;
-
+    [SerializeField] Paddlee paddle1;
     Vector2 paddleToBallVector;
 
 	// Use this for initialization
 	void Start () {
+
 
         paddleToBallVector = transform.position - paddle1.transform.position;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();

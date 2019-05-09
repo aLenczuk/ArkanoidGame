@@ -691,8 +691,6 @@ GameObject:
   - component: {fileID: 1134301288}
   - component: {fileID: 1134301287}
   - component: {fileID: 1134301290}
-  - component: {fileID: 1134301291}
-  - component: {fileID: 1134301292}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -799,30 +797,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1134301286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3dfe84c40d6c4c6aa56e2c26c181852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1134301291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1134301286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f84749da6d794af4cbd0383ebe0c8553, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
---- !u!114 &1134301292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1134301286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39863dccd4273874998e82f63c8b6b6e, type: 3}
+  m_Script: {fileID: 11500000, guid: 518dbb00644baf94c884ea476dd6db9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   screenWidthInUnits: 16
@@ -901,6 +876,7 @@ GameObject:
   - component: {fileID: 1189033492}
   - component: {fileID: 1189033491}
   - component: {fileID: 1189033494}
+  - component: {fileID: 1189033495}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -976,7 +952,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1189033490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.98, y: 1.48, z: -1}
+  m_LocalPosition: {x: 8.01, y: 1.44, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1002,6 +978,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1189033495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189033490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd5280046a1f3649801691c583b0fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paddle1: {fileID: 0}
 --- !u!1 &1679151925
 GameObject:
   m_ObjectHideFlags: 0
